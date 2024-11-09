@@ -1,0 +1,244 @@
+GIT BASH
+
+Here are the steps and Git commands to create a GitHub repository, initialize your local project, and push your code to GitHub.
+
+### Step 1: Create a GitHub Account
+1. Go to [GitHub](https://github.com/) and sign up for a new account if you haven't already.
+2. After signing up, log in to your account.
+
+### Step 2: Create a New Repository on GitHub
+1. Click on the **"New"** button or go to [https://github.com/new](https://github.com/new).
+2. Enter the **Repository name** (e.g., `college-dashboard`) and an optional **Description**.
+3. Choose whether the repository will be **Public** or **Private**.
+4. Click **Create repository**.
+
+Once the repository is created, GitHub will show you some instructions for connecting a local repository.
+
+### Step 3: Initialize Local Repository and Push Code to GitHub
+
+1. **Open Git Bash** on your computer.
+2. **Navigate** to your project directory or create a new one if it doesn't exist:
+
+   ```bash
+   mkdir college-dashboard
+   cd college-dashboard
+   ```
+
+3. **Initialize** a new Git repository in your local project directory:
+
+   ```bash
+   git init
+   ```
+
+4. **Add files** to the Git staging area:
+
+   ```bash
+   git add .
+   ```
+
+5. **Commit** the changes with a message:
+
+   ```bash
+   git commit -m "Initial commit"
+   ```
+
+6. **Add the remote repository** URL (replace `your-username` and `your-repository` with your GitHub username and repository name):
+
+   ```bash
+   git remote add origin https://github.com/your-username/college-dashboard.git
+   ```
+
+7. **Push** your code to GitHub:
+
+   ```bash
+   git push -u origin main
+   ```
+
+If the repository uses a `master` branch instead of `main`, use `master` instead in the push command:
+
+   ```bash
+   git push -u origin master
+   ```
+
+### Git Commands Recap
+
+```bash
+# Navigate to project directory or create one
+cd path/to/project
+
+# Initialize Git repository
+git init
+
+# Add all files to staging
+git add .
+
+# Commit the changes
+git commit -m "Initial commit"
+
+# Add GitHub remote repository
+git remote add origin https://github.com/your-username/your-repository.git
+
+# Push to GitHub
+git push -u origin main
+```
+
+After these steps, your code will be available in your GitHub repository. You can confirm by visiting your repository URL in a browser.
+
+
+
+
+To perform the same steps using **Visual Studio Code (VS Code)** and **Command Prompt**, here’s a detailed guide:
+
+### Step 1: Create a GitHub Account
+1. Go to [GitHub](https://github.com/) and sign up for a new account if you haven't already.
+2. After signing up, log in to your account.
+3. Create a new repository on GitHub, as mentioned earlier.
+
+### Step 2: Open Your Project in Visual Studio Code
+1. **Open VS Code** on your computer.
+2. **Open your project folder** in VS Code by going to `File` > `Open Folder...` and selecting your project folder.
+   - If you don't have a project folder, you can create one by navigating to `Terminal` > `New Terminal`, and using the `mkdir` command:
+     ```bash
+     mkdir college-dashboard
+     cd college-dashboard
+     code .
+     ```
+3. In VS Code, **open the integrated terminal** by going to `View` > `Terminal` or pressing `` Ctrl + ` ``.
+
+### Step 3: Initialize Local Repository and Push Code to GitHub
+
+**In VS Code Integrated Terminal:**
+
+1. **Initialize the Git repository** (this will create a `.git` folder in your project):
+
+   ```bash
+   git init
+   ```
+
+2. **Add files to the staging area** (to include all files in the repository):
+
+   ```bash
+   git add .
+   ```
+
+3. **Commit your changes** (this creates a snapshot of the current state):
+
+   ```bash
+   git commit -m "Initial commit"
+   ```
+
+4. **Add the remote repository** (replace `your-username` and `your-repository` with your actual GitHub username and repository name):
+
+   ```bash
+   git remote add origin https://github.com/your-username/your-repository.git
+   ```
+
+5. **Push your code to GitHub** (this uploads your local repository to GitHub):
+
+   ```bash
+   git push -u origin main
+   ```
+
+If your repository uses the `master` branch instead of `main`, use this command:
+
+```bash
+git push -u origin master
+```
+
+**VS Code Command Palette Alternative:**
+- You can also use the **Git GUI** inside VS Code to perform these actions without terminal commands:
+  - Go to the **Source Control** panel (`Ctrl+Shift+G`).
+  - Click on **Initialize Repository**.
+  - Use the **Publish to GitHub** option or add the remote manually via **Repository Settings**.
+
+### Step 4: Verify Push on GitHub
+1. Go to your GitHub repository URL in a browser (`https://github.com/your-username/your-repository`).
+2. You should see your files pushed to GitHub.
+
+---
+
+### Step 5: Using Command Prompt (Outside VS Code)
+You can also use **Command Prompt** to perform these Git commands.
+
+1. **Open Command Prompt**:
+   - Press `Win + R`, type `cmd`, and press Enter.
+
+2. **Navigate to your project directory** (or create one):
+
+   ```bash
+   cd path\to\your\project
+   ```
+
+   - Or create a new folder for your project:
+     ```bash
+     mkdir college-dashboard
+     cd college-dashboard
+     ```
+
+3. **Initialize the Git repository**:
+
+   ```bash
+   git init
+   ```
+
+4. **Add files to the staging area**:
+
+   ```bash
+   git add .
+   ```
+
+5. **Commit your changes**:
+
+   ```bash
+   git commit -m "Initial commit"
+   ```
+
+6. **Add the remote GitHub repository**:
+
+   ```bash
+   git remote add origin https://github.com/your-username/your-repository.git
+   ```
+
+7. **Push your code to GitHub**:
+
+   ```bash
+   git push -u origin main
+   ```
+
+   - If you're using the `master` branch, use:
+
+     ```bash
+     git push -u origin master
+     ```
+
+### Final Commands Recap
+
+In **VS Code Integrated Terminal** or **Command Prompt**, the commands will look like this:
+
+```bash
+# Initialize the Git repository
+git init
+
+# Add files to staging area
+git add .
+
+# Commit changes
+git commit -m "Initial commit"
+
+# Add GitHub remote repository
+git remote add origin https://github.com/your-username/your-repository.git
+
+# Push code to GitHub
+git push -u origin main
+```
+
+After performing these steps, your code will be uploaded to your GitHub repository. You can check it in your GitHub repository's webpage.
+
+
+
+
+
+
+
+
+
