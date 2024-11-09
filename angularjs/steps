@@ -1,0 +1,59 @@
+1. Create a New Angular Project
+If you haven't already, create a new Angular project by running:
+
+ng new userManagementApp
+cd userManagementApp
+
+
+Install dependencies like Angular Forms for handling form data and Angular Router for navigation.
+
+npm install @angular/forms @angular/router
+
+2. Generate Components and Services
+Generate the necessary components and a service:
+
+ng generate component register
+
+ng generate component login
+
+ng generate component profile
+
+ng generate service auth
+
+
+3. Implement Routing
+
+Update app-routing.module.ts to handle navigation between components
+
+
+
+Add these routes to app.component.html to allow navigation
+
+
+4. Build the Auth Service (auth.service.ts)
+The AuthService will handle user data management (mocking a backend).
+
+
+5. Build the Register Component (register.component.ts)
+The Register Component allows new users to register.
+
+
+6. Build the Login Component (login.component.ts)
+The Login Component lets users log in.
+
+
+Component Logic (login.component.ts):
+
+
+7. Build the Profile Component (profile.component.ts)
+The Profile Component displays the logged-in user's information.
+
+Template (profile.component.html):
+
+Component Logic (profile.component.ts):
+
+8. Update app.module.ts
+Ensure all the components and the FormsModule are declared in app.module.ts
+
+9. Run the Application
+Start your Angular application
