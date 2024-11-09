@@ -1,0 +1,40 @@
+1. Initialize a Node.js Project
+First, set up a new Node.js project by creating a project directory and initializing it:
+
+mkdir staticWebsiteServer
+
+cd staticWebsiteServer
+
+npm init -y
+
+2. Install Express
+Install express to easily manage routing and serving static files:
+
+npm install express
+
+3. Create the Directory Structure
+Your project structure will look like this:
+
+staticWebsiteServer
+├── public
+│   ├── index.html
+│   ├── styles.css
+│   └── script.js
+├── server.js
+└── package.json
+
+4. Create a Static Website
+Inside the public folder, add a simple HTML page, along with optional CSS and JavaScript files.
+
+public/practice.html
+
+5. Create the Node.js Server
+In the server.js file, create an Express server to serve the static files from the public directory.
+
+server.js
+
+6. Run the Server
+Start your server by running:
+
+node server.js
+
