@@ -1,0 +1,47 @@
+1. Initialize the Project
+Create a project directory and initialize it:
+
+mkdir assignmentAPI
+cd assignmentAPI
+npm init -y
+Install required packages:
+
+npm install express mongoose body-parser
+
+
+2. Set Up MongoDB Connection
+Create a .env file in the root directory to store your MongoDB connection string (or use a local MongoDB URI):
+
+MONGODB_URI=mongodb://localhost:27017/assignmentsDB
+PORT=3000
+
+3. Create the Directory Structure
+
+assignmentAPI
+├── models
+│   └── Assignment.js
+├── routes
+│   └── assignmentRoutes.js
+├── server.js
+├── .env
+└── package.json
+
+4. Define the Assignment Model
+In the models folder, create Assignment.js to define the schema for an assignment document.
+
+models/Assignment.js
+
+5. Create CRUD Routes
+In the routes folder, create assignmentRoutes.js for CRUD routes: Create, Read, Update, and Delete.
+
+routes/assignmentRoutes.js
+
+6. Set Up Express Server
+In server.js, set up the Express server to use assignmentRoutes and connect to MongoDB.
+
+server.js
+
+Start the Server
+Start your server with:
+
+node server.js
